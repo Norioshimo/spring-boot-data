@@ -18,8 +18,8 @@ import nsg.portafolio.listener.AuditProductListerner;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "products")
 @EntityListeners(AuditProductListerner.class)
+@Table(name = "products")
 public class Product {
 
     @Id

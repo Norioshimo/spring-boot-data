@@ -1,5 +1,5 @@
 USE jpa_audit_db;
-CREATE TABLE History
+CREATE TABLE history
 (
     id          INT AUTO_INCREMENT PRIMARY KEY,
     name        VARCHAR(255),

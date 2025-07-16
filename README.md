@@ -4,14 +4,29 @@ Este proyecto utiliza Spring Boot y Spring Data con Java 17.
 Se conecta a una base de datos MySQL.
 
 ------------------------------------------------------------
-REQUISITOS
+ENVIRONMENT
 ------------------------------------------------------------
-Antes de ejecutar la aplicación, crear la base de datos:
 
-Nombre de la base de datos: jpa_audit_db
+Copiar y pegar el archivo .env.template y renombrar a .env. Configurar el archivo .env con sus configuraciones correspondientes.
 
-Ejemplo en MySQL:
-CREATE DATABASE jpa_audit_db;
+------------------------------------------------------------
+LEVANTAR EN EL DOCKER
+------------------------------------------------------------
+Levantar el proyecto usando docker.
+
+En la terminal ejecutar: docker-compose up -d
+
+Compilar y levantar
+
+En la terminar ejecutar: doecker-compose up -d --build
+
+
+------------------------------------------------------------
+LEVANTAR EN EL LOCAL
+------------------------------------------------------------
+Levantar solo la base de datos.
+
+Ejecutar en la terminal: mvn spring-boot:run "-Dspring-boot.run.profiles=dev"
 
 ------------------------------------------------------------
 AUTENTICACIÓN

@@ -22,6 +22,7 @@ public class ProductController {
     @PostMapping("/create")
     @PreAuthorize("hasRole('USER')")
     public ResponseEntity<String> addProduct(@RequestBody Product product) {
+        System.out.println("Crear producto");
         this.productRepository.save(product);
         return new ResponseEntity<>("Producto Creado con éxito", HttpStatus.CREATED);
     }

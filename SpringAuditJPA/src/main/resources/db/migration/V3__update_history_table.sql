@@ -1,4 +1,4 @@
 USE jpa_audit_db;
 
-ALTER TABLE History
+ALTER TABLE history
     ADD COLUMN user VARCHAR(255);
